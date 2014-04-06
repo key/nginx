@@ -171,7 +171,7 @@ else
   case node['platform']
   when 'gentoo'
     genrate_template = false
-  when 'debian', 'ubuntu'
+  when 'debian', 'ubuntu', 'raspbian'
     genrate_template = true
     defaults_path    = '/etc/default/nginx'
   else
